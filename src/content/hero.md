@@ -1,9 +1,9 @@
 ---
 greetings: "Hello"
 emoji: "👋"
-title: "I'm Sangwon Park"
-subtitlePrefix: "I like to think about "
+title: "I'm Sangwon (Peter) Park"
+subtitlePrefix: "I am interested in all things "
 subtitleHighlight: "strategy and technology."
 ---
 
-Currently working as a Digital Solutions Intern at Visa. Based in Hong Kong.
+Digital Solutions Intern at Visa. Based in Hong Kong.
