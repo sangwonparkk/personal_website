@@ -10,9 +10,21 @@ const StyledHeader = styled.header`
   padding: 0 2.5rem;
   background: white;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 `
+
+const StyledContainer = styled.div`
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+`
+
+const StyledLink = styled.div`
+  padding: 0 1rem 0 0;
+`
+
+const StyledLinkLast = styled.div``
 
 const StyledLogo = styled.div`
   font-size: 2rem;
@@ -26,6 +38,14 @@ const Header = () => {
       <Link to="/" aria-label="home">
         <StyledLogo>sangwon.</StyledLogo>
       </Link>
+      <StyledContainer>
+        <Link to="blog" aria-label="blog">
+          <StyledLink>blog</StyledLink>
+        </Link>
+        <Link to="resume" aria-label="resume">
+          <StyledLinkLast>resume</StyledLinkLast>
+        </Link>
+      </StyledContainer>
     </StyledHeader>
   )
 }

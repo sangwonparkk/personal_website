@@ -1,33 +1,18 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 
-const PageLinks = [
-  {
-    text: "Blog",
-    url: "blog",
-  },
-]
-
-const IndexPage = ({ data }) => {
+const BlogPage = ({ data }) => {
   return (
     <Layout>
       <Hero content={data.hero.edges[0].node} />
-      {/* <p>
-        {PageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== PageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-      </p> */}
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPage
 
 export const pageQuery = graphql`
   {
